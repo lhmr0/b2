@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Golang on luishmr0</title>
+    <link>https://luishmr0.github.io/b2/tags/golang/index.xml</link>
+    <description>Recent content in Golang on luishmr0</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-ES</language>
+    <copyright>All rights reserved - 2016</copyright>
+    <atom:link href="https://luishmr0.github.io/b2/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Tutorial básico de go!</title>
+      <link>https://luishmr0.github.io/b2/post/go/</link>
+      <pubDate>Mon, 11 Jul 2016 10:54:24 +0200</pubDate>
+      
+      <guid>https://luishmr0.github.io/b2/post/go/</guid>
+      <description>&lt;p&gt;Acá veremos algunos ejemplos básicos en go como variables, condiciones, estructuras, arreglos, ciclos, interfaces, slices&lt;/p&gt;
+
+&lt;p&gt;Se puede usar la &lt;a href=&#34;https://play.golang.org/&#34;&gt;web de go&lt;/a&gt; para probar los ejemplos básicos que pondré más adelante, aunque recomiendo instalar en tu computadora, descarga acá&lt;/p&gt;
+
+&lt;p&gt;Declaración de variables&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;package main 
+
+ import (&amp;quot;fmt&amp;quot;
+ &amp;quot;strconv&amp;quot;)
+
+func main() {
+var  nombre string
+var edad int
+edad=21
+nombre=&amp;quot;Luis&amp;quot;
+edadstrng:=strconv.Itoa(edad)
+fmt.Println(nombre+&amp;quot; y su edad &amp;quot;+edadstrng)
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Las variables en go se pueden declarar y asignar al mismo tiempo de la siguiente manera := el tipo de dato se asignará automáticamente de acuerdo a lo que ingrese&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;package main 
+
+ import (&amp;quot;fmt&amp;quot;
+ &amp;quot;strconv&amp;quot;)
+
+func main() {
+edad:=21
+nombre:=&amp;quot;Luis&amp;quot;
+edadstrng:=strconv.Itoa(edad)
+fmt.Println(nombre+&amp;quot; y su edad &amp;quot;+edadstrng)
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Condicionales&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;package main
+
+import (
+&amp;quot;fmt&amp;quot;
+&amp;quot;time&amp;quot;
+)
+
+func main() {
+    _, month, day := time.Now().Date()//nos devuelve año, mes y día, pero no usaremos el año
+   if month == time.June &amp;amp;&amp;amp; day == 1 {//cambiamos la fecha por la que deseamos 
+    fmt.Println(&amp;quot;Feliz cumpleaños&amp;quot;)
+   }else{
+    fmt.Println(&amp;quot;Hoy no es tu cumpleaños&amp;quot;)
+     }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://luishmr0.github.io/b2/images/go1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ciclos
+En go solo contamos con el ciclo for, pero a partir de este se puede usar while y do while&lt;/p&gt;
+
+&lt;p&gt;Ejemplo de for&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;package main 
+
+ import (&amp;quot;fmt&amp;quot;)
+
+func main() {
+for i:=0; i&amp;lt;10;i++{
+    fmt.Println(i)
+   }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;while&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;package main 
+
+import (&amp;quot;fmt&amp;quot;
+&amp;quot;strings&amp;quot;)
+
+func main() {
+var name string
+fmt.Println(&amp;quot;Su nombre:&amp;quot;)
+fmt.Scanln(&amp;amp;name)// va a funcionar en go instalado en tu pc
+letras:=strings.Split(name,&amp;quot;&amp;quot;) 
+fmt.Println(&amp;quot;------&amp;quot;)
+for _,letra:=range(letras){ //range devuelve 2 valores, el primero la posición en el arreglo y el segundo el valor de este
+fmt.Println(letra)
+      }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://luishmr0.github.io/b2/images/go2.png&#34; alt=&#34;&#34; /&gt;
+Array y slices
+El array en go tiene un tamaño que asignamos
+ejemplo var a [4]int o a :=[4]int{1,2,3,4} si es que declaramos y asignamos en la misma instancia
+Es por eso que en go se usa los slices mejor ya que estos no necesitan de la dimensión del arreglo
+ejemplo a :=[]int{1,2,3,4}
+Los slices tienen esta estructura, el puntero, el tamaño y la capacidad del slice, si deseas saber más info de slices
+&lt;img src=&#34;https://blog.golang.org/go-slices-usage-and-internals_slice-struct.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;package main
+
+import (&amp;quot;fmt&amp;quot;)
+
+func main() {
+slice:=[]string{&amp;quot;Luis&amp;quot;,&amp;quot;android&amp;quot;,&amp;quot;Heroes of The Storm&amp;quot;}
+for i:=0; i&amp;lt;len(slice);i++{
+    fmt.Println(slice[i])
+//fmt.Println(i)
+       }
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ghost on luishmr0</title>
+    <link>https://luishmr0.github.io/b2/tags/ghost/index.xml</link>
+    <description>Recent content in Ghost on luishmr0</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-ES</language>
+    <copyright>All rights reserved - 2016</copyright>
+    <atom:link href="https://luishmr0.github.io/b2/tags/ghost/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Instala ghost localmente</title>
+      <link>https://luishmr0.github.io/b2/post/ghost/</link>
+      <pubDate>Mon, 11 Jul 2016 10:54:24 +0200</pubDate>
+      
+      <guid>https://luishmr0.github.io/b2/post/ghost/</guid>
+      <description>
+
+&lt;p&gt;Instalaremos Ghost locamente en Windows, en simples pasos podrás probar Ghost para convencerte de usarlo&lt;/p&gt;
+
+&lt;h4 id=&#34;node-js&#34;&gt;Node.js&lt;/h4&gt;
+
+&lt;p&gt;Ghost corre bajo nodejs, por lo cual debes tener instalado para instalar, &lt;a href=&#34;https://nodejs.org/en/download/&#34;&gt;acá&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;ghost&#34;&gt;Ghost&lt;/h4&gt;
+
+&lt;p&gt;Primero tenemos que descargar &lt;a href=&#34;https://ghost.org/es/developers/&#34;&gt;ghost&lt;/a&gt;
+&lt;img src=&#34;https://luishmr0.github.io/b2/images/ghost1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Después abrimos el command prompt de Node.js
+&lt;img src=&#34;https://luishmr0.github.io/b2/images/node.png&#34; alt=&#34;&#34; /&gt;
+Ahora ubícamos la carpeta donde descomprimimos ghost, la última versión al día de hoy es la 0.11.2&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd carpeta/ghost-0.11.2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Ahora instalamos&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;npm install --production
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Una vez que haya instalado levantamos Ghost&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;npm start
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Y ahora tan solo accedemos a 127.0.0.1:2368 y veremos a ghost levantado
+&lt;img src=&#34;https://luishmr0.github.io/b2/images/ghostlc.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Entramos en 127.0.0.1:2368/ghost para la configuración
+&lt;img src=&#34;https://luishmr0.github.io/b2/images/ghostset.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
