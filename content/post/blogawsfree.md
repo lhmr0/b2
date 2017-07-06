@@ -2,7 +2,7 @@
 +++
 date = "2016-07-11T10:54:24+02:00"
 draft = false
-title = "Instala ghost localmente"
+title = "Crea tu blog gratis con Ghost en AWS EC2"
 slug = "ghost"
 tags = ["ghost","cms"]
 image = ""
