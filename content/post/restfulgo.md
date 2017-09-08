@@ -1,6 +1,6 @@
 
 +++
-date = "2016-07-11T10:54:24+02:00"
+date = "2016-08-11T10:54:24+02:00"
 draft = false
 title = "Crea tu RESTful API en GO"
 slug = "ghost"
