@@ -13,3 +13,5 @@ deploy:
         token: $GIT_TOKEN
         domain: b.lhmr.tech
         basedir: public
+
+https://3dsim.github.io/using-hugo-and-wercker-to-create-and-automate-your-own-site/
